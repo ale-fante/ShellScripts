@@ -12,19 +12,19 @@ else
 fi
 
 exit 0
-Here's the second script, remindme:
+# "Here's the second script, remindmer:"
 
 #!/bin/sh
 
 # remindme - Searches a data file for matching lines, or shows the entire contents
 #   of the data file if no argument is specified.
 
-rememberfile="$HOME/.remember"
+# rememberfile="$HOME/.remember"
 
-if [ $# -eq 0 ] ; then
-  more $rememberfile
-else
-  grep -i "$@" $rememberfile | ${PAGER:-more}
-fi
+# if [ $# -eq 0 ] ; then
+#   more $rememberfile
+# else
+#   grep -i "$@" $rememberfile | ${PAGER:-more}
+# fi
 
-exit 0
+# exit 0
