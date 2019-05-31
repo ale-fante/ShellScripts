@@ -92,7 +92,7 @@ read description
 echo "$(echo $date|sed 's/ //g')|$description" >> $agendafile
 
 exit 0
-The second script is shorter but is used more often:
+# The second script is shorter but is used more often:
 
 #!/bin/sh
 
@@ -108,7 +108,7 @@ checkDate()
   format1="$weekday"   format2="$day$month"   format3="$day$month$year"
   # and step through the file comparing dates...
 
-  IFS="|"       # the reads will naturally split at the IFS
+  IFS=" |"       # the reads will naturally split at the IFS
 
   echo "On the Agenda for today:"
 
